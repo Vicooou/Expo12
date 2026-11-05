@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio de calidad · Royce</title><style>:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;color:#192e2a;background:#f4f5f0;font-synthesis:none;--green:#17634e;--line:#dde3d9}*{box-sizing:border-box}body{margin:0}header{display:flex;align-items:center;gap:24px;max-width:1240px;margin:auto;padding:24px 32px;border-bottom:1px solid var(--line)}header>span{font-size:10px;letter-spacing:1.5px;color:#66786e}.brand{font-size:25px;font-weight:850;text-decoration:none;color:inherit}.brand span{color:#c27a28}header button{margin-left:auto}main{max-width:1240px;margin:auto;padding:40px 32px}.eyebrow{font-size:11px;letter-spacing:1.8px;color:var(--green);font-weight:750}h1{font-size:clamp(32px,4vw,52px);letter-spacing:-2px;line-height:1.12;margin:14px 0}p{font-size:14px;line-height:1.6;color:#5b6d63}.intro>p:last-child{font-size:17px;margin-bottom:32px}.workspace{display:grid;grid-template-columns:350px 1fr;gap:22px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}.section-title{display:flex;gap:10px;align-items:center}h2{font-size:18px;margin:0;letter-spacing:-.4px}.step{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#e9eee5;font-size:12px;font-weight:750}.controls>p{font-size:12px}.bug{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid #edf0eb;cursor:pointer;gap:12px}.bug strong,.bug small{display:block}.bug strong{font-size:14px;margin:7px 0 3px}.bug small{font-size:11px;color:#6a786e}.severity{font-size:10px;text-transform:uppercase;letter-spacing:.7px}.critical{color:#b43434}.high{color:#b85b22}.medium{color:#967619}.low{color:#506da7}input[type=checkbox]{appearance:none;flex-shrink:0;width:36px;height:22px;border-radius:14px;background:#d8dfd7;position:relative;cursor:pointer;margin:0}input[type=checkbox]:before{content:'';position:absolute;width:16px;height:16px;border-radius:50%;background:white;top:3px;left:3px;transition:transform .15s}input:checked[type=checkbox]{background:var(--green)}input:checked[type=checkbox]:before{transform:translateX(14px)}button,select,input{font:inherit}button{border:0;background:var(--green);color:#fff;border-radius:8px;padding:12px 18px;font-size:13px;font-weight:650;cursor:pointer}button:hover{filter:brightness(.93)}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #ba8b35;outline-offset:3px}.quiet{background:#eff2eb;color:#335044;font-size:11px;padding:10px 12px}.presets{display:flex;gap:8px;margin-top:18px}.demo-label{font-size:9px;letter-spacing:1px;color:#758274;margin-left:auto}.shop-top{display:flex;align-items:center;justify-content:space-between;margin:24px 0 18px;gap:12px}h3{font-size:19px;letter-spacing:-.4px}.shop-top label{font-size:11px;color:#66776d}select{display:block;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px;margin-top:6px;font-size:12px}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.product{min-width:0;border:1px solid #e2e7df;border-radius:10px;overflow:hidden}.product-art{height:105px;display:grid;place-items:center;font-size:48px;background:#f0f1e9}.product:nth-child(2) .product-art{background:#eaf0ed}.product:nth-child(3) .product-art{background:#f3eede}.product-info{padding:13px}.product h4{font-size:12px;margin:0 0 5px}.product p{margin:0;font-size:12px}.product button{width:100%;margin-top:13px;padding:9px;font-size:11px;background:#eaf1eb;color:var(--green)}.checkout{border-top:1px solid var(--line);margin-top:24px;padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.checkout small,.checkout strong,.checkout span{display:block}.checkout small{font-size:11px;color:#69796f}.checkout strong{font-size:26px;margin:3px 0}.checkout span{font-size:11px;color:#69796f}.shop-message{font-size:12px;min-height:39px;background:#f5f7f1;padding:10px;border-radius:6px}.shop-message.error{color:#9c2929;background:#fceeed}.shop-message.success{color:var(--green);background:#ecf6ee}.shop-note{font-size:10px;margin:0}.results{margin-top:22px}.result-heading{display:flex;justify-content:space-between;gap:16px;align-items:center}.metric-grid{display:grid;grid-template-columns:1fr 1fr 1.2fr;margin:24px 0;gap:24px}.metric-grid>div{border-left:2px solid var(--line);padding-left:18px}.metric-grid small,.metric-grid span{display:block;font-size:10px;letter-spacing:.5px;color:#64756b}.metric-grid strong{display:block;font-size:38px;font-weight:700;margin:5px 0}.metric-grid span{font-size:12px;letter-spacing:0}.rate-bar{height:9px;background:#d56b61;border-radius:5px;overflow:hidden}.rate-bar>div{height:100%;background:#247458;transition:width .3s}#verdict{padding:16px;border-radius:8px;background:#eef6ec;margin:18px 0;font-size:14px;line-height:1.6}#verdict.risk{background:#fff0ea;color:#803b2b}summary{cursor:pointer;font-size:14px;font-weight:650;padding:6px 0}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:12px}td,th{text-align:left;padding:10px;border-bottom:1px solid var(--line)}th{color:#68796c;font-weight:500}.ok{color:#166348}.fail{color:#af3434}.formula{font-family:ui-monospace,monospace;font-size:12px}.source{margin-top:22px}.source>summary{font-size:15px}.calculator{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.calculator label{font-size:12px}.calculator input{display:block;width:110px;margin-top:7px;border:1px solid var(--line);padding:10px;border-radius:7px}.calculator output{font-size:15px;line-height:1.8;color:var(--green)}.distribution{max-width:600px}.distribution>div{display:grid;grid-template-columns:95px 1fr 45px;align-items:center;gap:14px;margin:12px 0;font-size:12px}meter{width:100%;height:16px}footer{padding:32px 0 8px;font-size:14px;line-height:1.6}footer span{display:block;color:#788477;font-size:10px;margin-top:9px}[hidden]{display:none!important}@media(max-width:900px){.workspace{grid-template-columns:290px 1fr}.products{grid-template-columns:1fr}.product{display:flex}.product-art{width:80px;flex-shrink:0;height:auto;font-size:32px}.product-info{width:100%}.shop-top{align-items:start}.shop-top h3{font-size:16px}.checkout{flex-wrap:wrap}}@media(max-width:640px){header{padding:18px;gap:12px}header>span{display:none}main{padding:25px 16px}.workspace{grid-template-columns:1fr}.panel{padding:20px}.products{grid-template-columns:repeat(3,1fr)}.product{display:block}.product-art{width:100%;height:80px}.product-info{padding:9px}.product h4{min-height:30px}.metric-grid{gap:12px;grid-template-columns:1fr 1fr}.metric-grid>div:last-child{grid-column:1/-1}.result-heading{align-items:start}.result-heading button{max-width:140px;padding:10px}.demo-label{display:none}h2{font-size:16px}}
+</style></head>
+<body>
+<header><a class="brand" href="#">Q<span>·</span>Lab</a><span>DEMO PARA LA EXPOSICIÓN DE ROYCE</span><button id="reset" class="quiet">Reiniciar demo</button></header>
+<main>
+<div class="intro"><p class="eyebrow">CALIDAD DE SOFTWARE / DEMOSTRACIÓN INTERACTIVA</p><h1>¿Publicarías esta tienda?</h1><p>Activa un error, prueba la tienda y descubre qué dicen las métricas.</p></div>
+<section class="workspace">
+<div class="left">
+<section class="panel controls"><div class="section-title"><span class="step">1</span><h2>Activa los defectos</h2></div><p>Cada interruptor introduce un error diferente.</p>
+<label class="bug"><span><b class="severity critical">Crítica</b><strong>Compra bloqueada</strong><small>Impide finalizar cualquier compra.</small></span><input type="checkbox" id="critical" aria-label="Activar defecto crítico"></label>
+<label class="bug"><span><b class="severity high">Alta</b><strong>Precio incorrecto</strong><small>El total aumenta S/ 20 por error.</small></span><input type="checkbox" id="high" aria-label="Activar defecto alto"></label>
+<label class="bug"><span><b class="severity medium">Media</b><strong>Filtro incorrecto</strong><small>«Audio» también muestra un teclado.</small></span><input type="checkbox" id="medium" aria-label="Activar defecto medio"></label>
+<label class="bug"><span><b class="severity low">Baja</b><strong>Color incorrecto</strong><small>El botón cambia de verde a violeta.</small></span><input type="checkbox" id="low" aria-label="Activar defecto bajo"></label>
+<div class="presets"><button id="critical-case" class="quiet">Cargar caso crítico</button><button id="all-case" class="quiet">Activar todos</button></div></section>
+</div>
+<section class="panel shop"><div class="section-title"><span class="step">2</span><h2>Prueba la tienda</h2><span class="demo-label">TIENDA SIMULADA</span></div><div class="shop-top"><h3>Objetos cotidianos.</h3><label>Categoría <select id="filter"><option value="all">Todos</option><option value="audio">Audio</option><option value="accessories">Accesorios</option></select></label></div><div id="products" class="products"></div><div class="checkout"><div><small>Total del carrito</small><strong id="total">S/ 0.00</strong><span id="cart-count">0 productos</span></div><button id="buy">Finalizar compra</button></div><p id="shop-message" class="shop-message" role="status">Agrega un producto para probar una compra.</p><p class="shop-note">Simulación educativa. No realiza pagos ni compras reales.</p></section>
+</section>
+<section class="panel results"><div class="result-heading"><div class="section-title"><span class="step">3</span><h2>Mide la calidad</h2></div><button id="run">Ejecutar 20 pruebas</button></div><p id="test-status" role="status">Ejecuta las pruebas para evaluar la configuración actual.</p><div id="report" hidden><div class="metric-grid"><div><small>PASS RATE</small><strong id="pass-rate"></strong><span id="passed"></span></div><div><small>FAIL RATE</small><strong id="fail-rate"></strong><span id="failed"></span></div><div><small>DEFECTOS ACTIVOS</small><strong id="defect-count"></strong><span>Un defecto puede causar varias pruebas fallidas.</span></div></div><div class="rate-bar" aria-hidden="true"><div id="pass-bar"></div></div><div id="verdict" role="status"></div><details><summary>Ver pruebas y cálculos</summary><p id="formulas" class="formula"></p><div class="table-wrap"><table><thead><tr><th>Prueba</th><th>Resultado</th><th>Severidad del fallo</th></tr></thead><tbody id="test-rows"></tbody></table></div></details></div></section>
+<details class="panel source"><summary>Datos de la presentación: 85/15 y 40 defectos</summary><p>Estos son ejemplos de las diapositivas, independientes de las 20 pruebas de la demo.</p><h3>Calculadora Pass / Fail Rate</h3><div class="calculator"><label>Aprobadas<input id="calc-pass" type="number" min="0" step="1" value="85"></label><label>Fallidas<input id="calc-fail" type="number" min="0" step="1" value="15"></label><output id="calc-result" aria-live="polite"></output></div><h3>Severidad de 40 defectos detectados</h3><p>La severidad clasifica el impacto. Estos 40 defectos no equivalen a las 15 pruebas fallidas.</p><div class="distribution"><div><span>Crítica · 4</span><meter min="0" max="40" value="4">4</meter><b>10%</b></div><div><span>Alta · 8</span><meter min="0" max="40" value="8">8</meter><b>20%</b></div><div><span>Media · 18</span><meter min="0" max="40" value="18">18</meter><b>45%</b></div><div><span>Baja · 10</span><meter min="0" max="40" value="10">10</meter><b>25%</b></div></div></details>
+<footer>Idea clave: importa cuántas pruebas fallan y qué tan graves son esos fallos.<span>Basado en «Severidad de defectos y Pass/Fail Rate» · Royce Kevin Ramírez Cruz</span></footer>
+</main><script>'use strict';
+const $ = id => document.getElementById(id);
+const levels = ['critical', 'high', 'medium', 'low'];
+const names = {critical:'Crítica',high:'Alta',medium:'Media',low:'Baja'};
+const catalog = [
+  {id:1,name:'Audífonos',category:'audio',price:80,icon:'🎧'},
+  {id:2,name:'Teclado',category:'accessories',price:120,icon:'⌨️'},
+  {id:3,name:'Parlante',category:'audio',price:60,icon:'🔊'}
+];
+let cart = [];
+let tested = false;
+function state(){ return Object.fromEntries(levels.map(level => [level,$(level).checked])); }
+function visibleProducts(category, bugs){return catalog.filter(p => category === 'all' || p.category === category || (bugs.medium && category === 'audio' && p.id === 2));}
+function totalFor(items,bugs){return items.reduce((sum,p)=>sum+p.price,0)+(items.length && bugs.high ? 20 : 0);}
+function checkoutResult(items,bugs){return !items.length ? 'empty' : bugs.critical ? 'blocked' : 'success';}
+function buttonColor(bugs){return bugs.low ? '#8651be' : '#17634e';}
+function message(text,kind=''){ $('shop-message').textContent=text;$('shop-message').className='shop-message '+kind; }
+function renderShop(){
+  const bugs=state();
+  $('products').innerHTML=visibleProducts($('filter').value,bugs).map(p=>`<article class="product"><div class="product-art" aria-hidden="true">${p.icon}</div><div class="product-info"><h4>${p.name}</h4><p>S/ ${p.price.toFixed(2)}</p><button data-add="${p.id}" aria-label="Agregar ${p.name}">+ Agregar</button></div></article>`).join('');
+  $('total').textContent='S/ '+totalFor(cart,bugs).toFixed(2);
+  $('cart-count').textContent=cart.length+' producto'+(cart.length===1?'':'s');
+  $('buy').style.backgroundColor=buttonColor(bugs);
+}
+// Cada prueba compara el comportamiento simulado con un resultado esperado.
+function evaluate(bugs){
+ const checks=[
+  ['Finalizar una compra',()=>checkoutResult([catalog[0]],bugs)==='success','critical'],
+  ['Total de un producto: S/ 80',()=>totalFor([catalog[0]],bugs)===80,'high'],
+  ['Total de dos productos: S/ 200',()=>totalFor([catalog[0],catalog[1]],bugs)===200,'high'],
+  ['Filtro Audio excluye accesorios',()=>visibleProducts('audio',bugs).every(p=>p.category==='audio'),'medium'],
+  ['Filtro Audio devuelve 2 productos',()=>visibleProducts('audio',bugs).length===2,'medium'],
+  ['Botón de compra con color verde',()=>buttonColor(bugs)==='#17634e','low'],
+  ['Catálogo con 3 productos',()=>visibleProducts('all',bugs).length===3],
+  ['Filtro Accesorios devuelve el teclado',()=>visibleProducts('accessories',bugs)[0].id===2],
+  ['Filtro Accesorios devuelve 1 producto',()=>visibleProducts('accessories',bugs).length===1],
+  ['Audífonos disponibles en Audio',()=>visibleProducts('audio',bugs).some(p=>p.id===1)],
+  ['Parlante disponible en Audio',()=>visibleProducts('audio',bugs).some(p=>p.id===3)],
+  ['Precio de audífonos: S/ 80',()=>catalog[0].price===80],
+  ['Precio de teclado: S/ 120',()=>catalog[1].price===120],
+  ['Precio de parlante: S/ 60',()=>catalog[2].price===60],
+  ['Identificadores únicos',()=>new Set(catalog.map(p=>p.id)).size===3],
+  ['Productos con nombre',()=>catalog.every(p=>p.name.length>0)],
+  ['Precios mayores que cero',()=>catalog.every(p=>p.price>0)],
+  ['Categorías reconocidas',()=>catalog.every(p=>['audio','accessories'].includes(p.category))],
+  ['Carrito vacío con total cero',()=>totalFor([],bugs)===0],
+  ['Compra vacía rechazada',()=>checkoutResult([],bugs)==='empty']
+ ];
+ return checks.map(([name,check,severity])=>({name,pass:check(),severity}));
+}
+function runTests(){
+ const bugs=state(), rows=evaluate(bugs), passed=rows.filter(r=>r.pass).length, failed=rows.length-passed;
+ tested=true;$('report').hidden=false;
+ $('test-status').textContent='Resultados de 20 pruebas sobre la tienda simulada. La cantidad y selección de pruebas afectan el porcentaje.';
+ $('pass-rate').textContent=(passed/rows.length*100).toFixed(0)+'%';$('fail-rate').textContent=(failed/rows.length*100).toFixed(0)+'%';
+ $('passed').textContent=passed+' de 20 aprobaron';$('failed').textContent=failed+' de 20 fallaron';
+ $('defect-count').textContent=levels.filter(l=>bugs[l]).length;
+ $('pass-bar').style.width=passed/rows.length*100+'%';
+ const verdict=$('verdict'); verdict.className=failed?'risk':'';
+ verdict.textContent=bugs.critical ? `Compra bloqueada: ${passed/rows.length*100}% de aprobación, pero hay un defecto crítico. En este caso, la tienda no está lista para publicarse.` : failed ? 'Hay fallos pendientes. Revisa su impacto antes de publicar. La decisión depende de la severidad y de los criterios del proyecto.' : 'Las 20 pruebas aprobaron. No se detectan los cuatro defectos de esta demo. Aprobar estas pruebas no garantiza que un sistema real esté libre de errores.';
+ $('formulas').textContent=`Pass Rate = (${passed} / 20) × 100 = ${passed*5}% · Fail Rate = (${failed} / 20) × 100 = ${failed*5}%`;
+ $('test-rows').innerHTML=rows.map(r=>`<tr><td>${r.name}</td><td class="${r.pass?'ok':'fail'}">${r.pass?'Aprobada':'Fallida'}</td><td>${r.pass?'—':names[r.severity]}</td></tr>`).join('');
+}
+function invalidate(){if(tested){$('report').hidden=true;$('test-status').textContent='Cambiaste los defectos. Ejecuta las pruebas otra vez para actualizar los resultados.';tested=false;} renderShop();message('Configuración actualizada. Prueba la tienda o ejecuta las pruebas.');}
+function setPreset(selected){levels.forEach(l=>$(l).checked=selected.includes(l));cart=[];$('filter').value='all';invalidate();runTests();}
+function calculate(){const p=$('calc-pass').value,f=$('calc-fail').value,a=Number(p),b=Number(f),out=$('calc-result');if(p===''||f===''||!Number.isSafeInteger(a)||!Number.isSafeInteger(b)||a<0||b<0||!Number.isSafeInteger(a+b)){out.textContent='Ingresa cantidades enteras, válidas y no negativas.';return;}const n=a+b;out.textContent=n===0?'Sin pruebas ejecutadas: las tasas no se pueden calcular.':`${n} ejecutadas · Pass: (${a} / ${n}) × 100 = ${(a/n*100).toLocaleString('es-PE',{maximumFractionDigits:2})}% · Fail: (${b} / ${n}) × 100 = ${(b/n*100).toLocaleString('es-PE',{maximumFractionDigits:2})}%`;}
+levels.forEach(l=>$(l).addEventListener('change',invalidate));
+$('filter').addEventListener('change',renderShop);
+$('products').addEventListener('click',event=>{const button=event.target.closest('[data-add]');if(!button)return;const product=catalog.find(p=>p.id===Number(button.dataset.add));cart.push(product);renderShop();message(product.name+' agregado al carrito.');});
+$('buy').addEventListener('click',()=>{const result=checkoutResult(cart,state());if(result==='empty')message('Agrega un producto antes de comprar.');else if(result==='blocked')message('Error crítico: no se puede finalizar la compra.','error');else{message('Compra simulada completada por S/ '+totalFor(cart,state()).toFixed(2)+'.','success');cart=[];renderShop();}});
+$('run').addEventListener('click',runTests);
+$('critical-case').addEventListener('click',()=>setPreset(['critical']));
+$('all-case').addEventListener('click',()=>setPreset(levels));
+$('reset').addEventListener('click',()=>{levels.forEach(l=>$(l).checked=false);cart=[];tested=false;$('filter').value='all';$('report').hidden=true;$('test-status').textContent='Ejecuta las pruebas para evaluar la configuración actual.';$('calc-pass').value=85;$('calc-fail').value=15;calculate();renderShop();message('Agrega un producto para probar una compra.');});
+['calc-pass','calc-fail'].forEach(id=>$(id).addEventListener('input',calculate));
+renderShop();calculate();
+</script></body></html>
